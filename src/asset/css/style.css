@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+      --header-height: 5.25rem;
+/* =============COLORS======================== */
+      /* color hexa */
+      --first-color:#002939;
+      --second-color:#DDC190;
+      --third-color: #DAD9D9;
+      --text-color:#323232;
+      --white: #ffffff;
+      --menu-shadow: rgba(0,0,0,.3);
+
+/* =============FONT & TYPOGRAFI===============
+.5rem = 8px 1rem = 16px */
+      --biggest-font-size: 2.875rem;
+      --h1-font-size: 2.125rem;
+      --h2-font-size: 1.875rem;
+      --h3-font-size: 1.625rem;
+      --h4-font-size: 1.25rem;
+      --body-font-size: 1.125rem;
+      --normal-font-size: 1rem;
+      --small-font-size: .898rem;
+      --icon-font-size: 1.5rem;
+      --first-font: "Merriweather", serif;
+      --second-font: "Open Sans", sans-serif;
+
+      /*============== FONT WEIGHT====================== */
+      --font-bold: 900;
+      --font-semi-bold: 700;
+      --font-regular: 400;
+
+/* ==========================z-index=============== */
+      --z-fixed: 100;
+      --z-tooltip: 10;
+}
+/* =================== BASE ============================ */
+* { 
+      margin: 0;
+      padding:0;
+      box-sizing: border-box;
+      user-select: none;
+}
+html {
+      scroll-berhavior: smooth;
+      font-size: 62.5%;
+}
+body {
+      font-family: "Open Sans", sans-serif;
+      font-size: var(--body-font-size);
+      overflow-x: hidden;
+      color: var(--text-color);
+}
+h1, 
+h2, 
+h3,
+h4,
+h5 {
+      font-family: var(--first-font);
+      line-height: 1.5em;
+      color: var(--text-color);
+}
+li {
+      list-style: none;
+}
+a {
+      text-decoration: none;
+      font-family: var(--first-font);
+}
+p {
+      line-height: 1.85em;
+}
+img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+}
+
+/* =============== REUSABLE CSS ================ */
+.container {
+      max-width: 1320px;
+      margin-inline: 1.5rem;
+}
+.grid {
+      display: grid;
+}
+.section {
+      padding: 6.25rem 0;
+}
+.section__title {
+      font-size: var(--h1-font-size);
+      margin-bottom: 1rem;
+      text-transform: capitalize;
+}
+.section__subtitle {
+      font-size: var(--h4-font-size);
+}
+.navbar__container,
+.navbar__menu,
+.navbar__menu-nav,
+.navbar__menu-extra {
+      display: flex;
+}
+.navbar__container,
+.navbar__menu {
+      align-items: center;
+}
+.navbar__brand,
+.navbar__menu-icon {
+      color: var(--white);
+}
+.navbar__brand {
+      font-size: var(--h2-font-size);
+      font-WEIGHT: var(--font-bold);
+      text-transform: uppercase;
+}
+.navbar__brand span {
+      color: var(--second-color);
+}
+.navbar__menu-link {
+      font-size: var(--h4-font-size);
+}
+.navbar__menu-icon {
+      font-size: var(--h2-font-size);
+}
+/* ============================== HEADER & NAVBAR =============================== */
+.header {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: var(--z-fixed);
+}
+.navbar__container {
+      height: var(--header-height);
+      justify-content: space-between;
+}
+/* mobile responsive */
+@media screen and (max-width: 1130px) {
+      .navbar__menu-nav {
+            width: 50%;
+            height: 100vh;
+            padding: 7rem 0 0 4rem;
+            position: absolute;
+            top: 100%;
+            right: -100%;
+            flex-direction: column;
+            gap: 1.5rem;
+      }
+      .navbar__menu-extra {
+            gap: 1.5rem;
+      }
+}
+.navbar__menu-link {
+      color: var(--first-color);
+}
