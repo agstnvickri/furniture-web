@@ -123,6 +123,30 @@ img {
 .navbar__menu-icon {
       font-size: var(--h2-font-size);
 }
+.hero__container {
+      gap: 6.25rem;
+}
+.hero__data {
+      align-self: center;
+      text-align: center;
+}
+.hero__images {
+      position: relative;
+}
+.hero__headline {
+      font-size: var(--biggest-font-size);
+      font-weight: var(--font-bold);
+}
+.hero__desc,
+.hero__btn {
+      font-size: var(--h4-font-size);
+}
+.hero__btn {
+      padding: 1em 1.5em;
+}
+.hero img {
+      position: absolute;
+}
 /* ============================== HEADER & NAVBAR =============================== */
 .header {
       width: 100%;
@@ -153,4 +177,57 @@ img {
 }
 .navbar__menu-link {
       color: var(--first-color);
+}
+/* ========================= HERO ==================================== */
+.hero {
+      position: relative;
+}
+.hero::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 85%;
+      background: var(--first-color);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -100;
+}
+.hero__container {
+      justify-content: center;
+      height: 720px;
+}
+.hero__headline {
+      margin-bottom: 1.5rem;
+      color: var(--second-color);
+}
+.hero__desc {
+      margin-bottom: 3.25rem;
+      color: var(--white);
+}
+.hero__cta {
+      justify-content: center;
+      gap: .5rem;
+}
+.hero img:nth-child(1) {
+      bottom: 0;
+      right: 0;
+}
+.hero img:nth-child(2) {
+      width: 80px;
+      top: -40%;
+      right: 0;
+}
+/* ==================== BUTTON ====================================== */
+.wrapper {
+      display: flex;
+}
+.btn {
+      background: transparent;
+      border: 2px solid var(--second-color);
+      border-radius: .3rem;
+      color: var(--second-color);
+      font-family: var(--first-font);
+      font-weight: var(--font-bold);
+      text-transform: capitalize;
 }
