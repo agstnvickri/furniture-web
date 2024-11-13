@@ -108,7 +108,9 @@ img {
 .navbar__brand,
 .navbar__menu-icon,
 .service__card-title,
-.service__card-lead {
+.service__card-lead,
+.banner__headline,
+.banner__lead {
       color: var(--white);
 }
 .navbar__brand {
@@ -126,30 +128,41 @@ img {
       font-size: var(--h2-font-size);
 }
 .hero__container,
-.service__container {
+.service__container,
+.banner__container {
       gap: 6.25rem;
 }
-.hero__data {
+.hero__container,
+.banner__container {
+      justify-content: center;
+}
+.hero__data,
+.banner__data {
       align-self: center;
       text-align: center;
 }
-.hero__images {
+.hero__images,
+.banner__images {
       position: relative;
 }
-.hero__headline {
+.hero__headline,
+.banner__headline {
       font-size: var(--biggest-font-size);
       font-weight: var(--font-bold);
 }
 .hero__desc,
 .hero__btn,
-.service__card-lead {
+.service__card-lead,
+.banner__lead {
       font-size: var(--h4-font-size);
 }
 .hero__btn,
-.service__card-btn {
+.service__card-btn,
+.banner__btn {
       padding: 1em 1.5em;
 }
-.hero img {
+.hero img,
+.banner img {
       position: absolute;
 }
 .service__header {
@@ -270,4 +283,23 @@ img {
 /* ========================== SERVICE ============================== */
 .service__card-title {
       margin-bottom: 3.25rem;
+}
+/* ======================= BANNER ===================================== */
+.banner__container {
+      height: 400px;
+      background: var(--first-color);
+      overflow: hidden;
+}
+.banner__lead {
+      margin-bottom: 1.5rem;
+}
+.banner__headline {
+      margin-bottom: 3.25rem;
+}
+.banner__headline span {
+      color: var(--second-color);
+}
+.banner img {
+      bottom: -20%;
+      right: 0;
 }
