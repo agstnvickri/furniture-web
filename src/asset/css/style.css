@@ -145,7 +145,8 @@ img {
 }
 .hero__images,
 .banner__images,
-.product__populer-card-data {
+.product__populer-card-data,
+.product__arrival-card-data {
       position: relative;
 }
 .hero__headline,
@@ -174,7 +175,10 @@ img {
       text-align: center;
 }
 .service__content,
-.product__populer {
+.product__populer,
+.product__arrival,
+.product__populer-list,
+.product__arrival-list {
       gap: 3.25rem;
 }
 .service__content {
@@ -190,7 +194,10 @@ img {
       align-items: center;
 }
 .service__card-title,
-.product__populer-title {
+.product__populer-title,
+.product__arrival-title,
+.product__arrival-card-title,
+.product__arrival-card-price {
       font-size: var(--h3-font-size);
       font-weight: var(--font-bold);
 }
@@ -199,26 +206,26 @@ img {
 }
 .service__card-btn,
 .product__populer-card-btn,
-.product__populer-card-images {
+.product__populer-card-images,
+.product__arrival-card-images {
       display: flex;
       gap: .5rem;
       align-items: center;
       justify-content: center;
 }
-.product__populer-list {
+.product__populer-list,
+.product__arrival-list {
       justify-content: center;
       grid-template-columns: 220px;
-      gap: 3.25rem;
 }
-.product__populer-card-images {
+.product__populer-card-images,
+.product__arrival-card-images {
       padding: .5em;
       margin-bottom: 1.5rem;
       height: 120px;
 }
-.product__populer-card img {
-      width: 80px;
-}
-.product__populer-card-btn {
+.product__populer-card-btn,
+.product__arrival-card-btn {
       width: 50px;
       height: 50px;
       position: absolute;
@@ -341,10 +348,29 @@ img {
 .product__populer-card-images {
       border: 2px solid var(--first-color);
 }
+.product__arrival-card-images {
+      background: var(--first-color);
+}
+.product__populer-card img {
+      width: 80px;
+}
+.product__arrival-card img {
+      width: 60px;
+}
 .product__populer-card-label {
       padding: .5em 0;
       width: 80px;
       background: var(--first-color);
       text-align: center;
       text-transform: capitalize;
+}
+.product__arrival-card-title {
+      margin-bottom: .5rem;
+}
+.product__arrival-card-rate {
+      margin-bottom: 1.5rem;
+      display: flex;
+      gap: .5rem;
+      font-size: var(--h4-font-size);
+      color: yellow;
 }
