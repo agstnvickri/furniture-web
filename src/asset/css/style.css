@@ -111,7 +111,10 @@ img {
 .service__card-lead,
 .banner__headline,
 .banner__lead,
-.product__populer-card-label {
+.product__populer-card-label,
+.promotion__card-title,
+.promotion__card-lead,
+.promotion__card-price span {
       color: var(--white);
 }
 .navbar__brand {
@@ -122,7 +125,9 @@ img {
 .navbar__brand span {
       color: var(--second-color);
 }
-.navbar__menu-link {
+.navbar__menu-link,
+.promotion__card-lead,
+.promotion__card-price {
       font-size: var(--h4-font-size);
 }
 .navbar__menu-icon {
@@ -146,7 +151,8 @@ img {
 .hero__images,
 .banner__images,
 .product__populer-card-data,
-.product__arrival-card-data {
+.product__arrival-card-data,
+.promotion__card-price span {
       position: relative;
 }
 .hero__headline,
@@ -178,14 +184,17 @@ img {
 .product__populer,
 .product__arrival,
 .product__populer-list,
-.product__arrival-list {
+.product__arrival-list,
+.promotion__container {
       gap: 3.25rem;
 }
-.service__content {
+.service__content,
+.promotion__container {
       justify-content: center;
       grid-template-columns: 320px;
 }
-.service__card {
+.service__card,
+.promotion__card {
       padding: 1.5em;
       background: var(--first-color);
       border-radius: .3rem;
@@ -197,11 +206,13 @@ img {
 .product__populer-title,
 .product__arrival-title,
 .product__arrival-card-title,
-.product__arrival-card-price {
+.product__arrival-card-price,
+.promotion__card-title {
       font-size: var(--h3-font-size);
       font-weight: var(--font-bold);
 }
-.service__card img {
+.service__card img,
+.promotion__card img {
       width: 120px;
 }
 .service__card-btn,
@@ -373,4 +384,25 @@ img {
       gap: .5rem;
       font-size: var(--h4-font-size);
       color: yellow;
+}
+/* =========================== PROMOTION ========================== */
+.promotion__card-title {
+      margin-bottom: 1.5rem;
+}
+.promotion__card-price {
+      color: var(--second-color);
+}
+.promotion__card-price span {
+      margin-right: 1.5em;
+}
+.promotion__card-price span::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      background: var(--white);
+      width: 100%;
+      height: 1px;
 }
