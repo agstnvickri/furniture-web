@@ -106,7 +106,9 @@ img {
       align-items: center;
 }
 .navbar__brand,
-.navbar__menu-icon {
+.navbar__menu-icon,
+.service__card-title,
+.service__card-lead {
       color: var(--white);
 }
 .navbar__brand {
@@ -123,7 +125,8 @@ img {
 .navbar__menu-icon {
       font-size: var(--h2-font-size);
 }
-.hero__container {
+.hero__container,
+.service__container {
       gap: 6.25rem;
 }
 .hero__data {
@@ -138,14 +141,47 @@ img {
       font-weight: var(--font-bold);
 }
 .hero__desc,
-.hero__btn {
+.hero__btn,
+.service__card-lead {
       font-size: var(--h4-font-size);
 }
-.hero__btn {
+.hero__btn,
+.service__card-btn {
       padding: 1em 1.5em;
 }
 .hero img {
       position: absolute;
+}
+.service__header {
+      text-align: center;
+}
+.service__content {
+      gap: 3.25rem;
+}
+.service__content {
+      justify-content: center;
+      grid-template-columns: 320px;
+}
+.service__card {
+      padding: 1.5em;
+      background: var(--first-color);
+      border-radius: .3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+.service__card-title {
+      font-size: var(--h3-font-size);
+      font-weight: var(--font-bold);
+}
+.service__card img {
+      width: 120px;
+}
+.service__card-btn {
+      display: flex;
+      gap: .5rem;
+      align-items: center;
+      justify-content: center;
 }
 /* ============================== HEADER & NAVBAR =============================== */
 .header {
@@ -230,4 +266,8 @@ img {
       font-family: var(--first-font);
       font-weight: var(--font-bold);
       text-transform: capitalize;
+}
+/* ========================== SERVICE ============================== */
+.service__card-title {
+      margin-bottom: 3.25rem;
 }
