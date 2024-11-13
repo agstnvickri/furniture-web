@@ -110,7 +110,11 @@ img {
 .service__card-title,
 .service__card-lead,
 .banner__headline,
-.banner__lead {
+.banner__lead,
+.product__populer-card-label,
+.promotion__card-title,
+.promotion__card-lead,
+.promotion__card-price span {
       color: var(--white);
 }
 .navbar__brand {
@@ -121,7 +125,9 @@ img {
 .navbar__brand span {
       color: var(--second-color);
 }
-.navbar__menu-link {
+.navbar__menu-link,
+.promotion__card-lead,
+.promotion__card-price {
       font-size: var(--h4-font-size);
 }
 .navbar__menu-icon {
@@ -129,7 +135,8 @@ img {
 }
 .hero__container,
 .service__container,
-.banner__container {
+.banner__container,
+.product__container {
       gap: 6.25rem;
 }
 .hero__container,
@@ -142,7 +149,10 @@ img {
       text-align: center;
 }
 .hero__images,
-.banner__images {
+.banner__images,
+.product__populer-card-data,
+.product__arrival-card-data,
+.promotion__card-price span {
       position: relative;
 }
 .hero__headline,
@@ -153,7 +163,8 @@ img {
 .hero__desc,
 .hero__btn,
 .service__card-lead,
-.banner__lead {
+.banner__lead,
+.product__populer-card-label {
       font-size: var(--h4-font-size);
 }
 .hero__btn,
@@ -165,17 +176,25 @@ img {
 .banner img {
       position: absolute;
 }
-.service__header {
+.service__header,
+.product__header {
       text-align: center;
 }
-.service__content {
+.service__content,
+.product__populer,
+.product__arrival,
+.product__populer-list,
+.product__arrival-list,
+.promotion__container {
       gap: 3.25rem;
 }
-.service__content {
+.service__content,
+.promotion__container {
       justify-content: center;
       grid-template-columns: 320px;
 }
-.service__card {
+.service__card,
+.promotion__card {
       padding: 1.5em;
       background: var(--first-color);
       border-radius: .3rem;
@@ -183,18 +202,46 @@ img {
       justify-content: space-between;
       align-items: center;
 }
-.service__card-title {
+.service__card-title,
+.product__populer-title,
+.product__arrival-title,
+.product__arrival-card-title,
+.product__arrival-card-price,
+.promotion__card-title {
       font-size: var(--h3-font-size);
       font-weight: var(--font-bold);
 }
-.service__card img {
+.service__card img,
+.promotion__card img {
       width: 120px;
 }
-.service__card-btn {
+.service__card-btn,
+.product__populer-card-btn,
+.product__populer-card-images,
+.product__arrival-card-images {
       display: flex;
       gap: .5rem;
       align-items: center;
       justify-content: center;
+}
+.product__populer-list,
+.product__arrival-list {
+      justify-content: center;
+      grid-template-columns: 220px;
+}
+.product__populer-card-images,
+.product__arrival-card-images {
+      padding: .5em;
+      margin-bottom: 1.5rem;
+      height: 120px;
+}
+.product__populer-card-btn,
+.product__arrival-card-btn {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
 }
 /* ============================== HEADER & NAVBAR =============================== */
 .header {
@@ -302,4 +349,60 @@ img {
 .banner img {
       bottom: -20%;
       right: 0;
+}
+/* ==================================== PRODUCT ======================= */
+.product__populer-category {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+.product__populer-card-images {
+      border: 2px solid var(--first-color);
+}
+.product__arrival-card-images {
+      background: var(--first-color);
+}
+.product__populer-card img {
+      width: 80px;
+}
+.product__arrival-card img {
+      width: 60px;
+}
+.product__populer-card-label {
+      padding: .5em 0;
+      width: 80px;
+      background: var(--first-color);
+      text-align: center;
+      text-transform: capitalize;
+}
+.product__arrival-card-title {
+      margin-bottom: .5rem;
+}
+.product__arrival-card-rate {
+      margin-bottom: 1.5rem;
+      display: flex;
+      gap: .5rem;
+      font-size: var(--h4-font-size);
+      color: yellow;
+}
+/* =========================== PROMOTION ========================== */
+.promotion__card-title {
+      margin-bottom: 1.5rem;
+}
+.promotion__card-price {
+      color: var(--second-color);
+}
+.promotion__card-price span {
+      margin-right: 1.5em;
+}
+.promotion__card-price span::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      background: var(--white);
+      width: 100%;
+      height: 1px;
 }
