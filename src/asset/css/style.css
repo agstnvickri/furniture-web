@@ -114,20 +114,35 @@ img {
 .product__populer-card-label,
 .promotion__card-title,
 .promotion__card-lead,
-.promotion__card-price span {
+.promotion__card-price span,
+.footer__data-brand,
+.footer__data-info-item,
+.footer__data-link-item,
+.footer__list-service-title,
+.footer__list-service-item,
+.footer__list-info-title,
+.footer__list-info-item,
+.footer__list-help-title,
+.footer__list-help-item,
+.footer__list-address-title,
+.footer__list-address-item {
       color: var(--white);
 }
-.navbar__brand {
+.navbar__brand,
+.footer__data-brand {
       font-size: var(--h2-font-size);
       font-WEIGHT: var(--font-bold);
       text-transform: uppercase;
 }
-.navbar__brand span {
+.navbar__brand span,
+.footer__data-brand span {
       color: var(--second-color);
 }
 .navbar__menu-link,
 .promotion__card-lead,
-.promotion__card-price {
+.promotion__card-price,
+.footer__data-info-item,
+.footer__data-link-item {
       font-size: var(--h4-font-size);
 }
 .navbar__menu-icon {
@@ -136,7 +151,10 @@ img {
 .hero__container,
 .service__container,
 .banner__container,
-.product__container {
+.product__container,
+.blog__container,
+.contact__container,
+.footer__container {
       gap: 6.25rem;
 }
 .hero__container,
@@ -164,12 +182,15 @@ img {
 .hero__btn,
 .service__card-lead,
 .banner__lead,
-.product__populer-card-label {
+.product__populer-card-label,
+.blog__card-desc {
       font-size: var(--h4-font-size);
 }
 .hero__btn,
 .service__card-btn,
-.banner__btn {
+.banner__btn,
+.blog__card-btn,
+.contact__form-btn {
       padding: 1em 1.5em;
 }
 .hero img,
@@ -177,7 +198,9 @@ img {
       position: absolute;
 }
 .service__header,
-.product__header {
+.product__header,
+.blog__header,
+.contact__header {
       text-align: center;
 }
 .service__content,
@@ -185,11 +208,17 @@ img {
 .product__arrival,
 .product__populer-list,
 .product__arrival-list,
-.promotion__container {
+.promotion__container,
+.blog__content,
+.contact__content,
+.footer__data,
+.footer__list {
       gap: 3.25rem;
 }
 .service__content,
-.promotion__container {
+.promotion__container,
+.contact__content,
+.footer__container {
       justify-content: center;
       grid-template-columns: 320px;
 }
@@ -207,7 +236,9 @@ img {
 .product__arrival-title,
 .product__arrival-card-title,
 .product__arrival-card-price,
-.promotion__card-title {
+.promotion__card-title,
+.blog__card-title,
+.contact__form-label {
       font-size: var(--h3-font-size);
       font-weight: var(--font-bold);
 }
@@ -225,7 +256,8 @@ img {
       justify-content: center;
 }
 .product__populer-list,
-.product__arrival-list {
+.product__arrival-list,
+.blog__content {
       justify-content: center;
       grid-template-columns: 220px;
 }
@@ -242,6 +274,29 @@ img {
       position: absolute;
       bottom: 0;
       right: 0;
+}
+.blog__card img,
+.blog__card-desc, 
+.blog__card-title {
+      margin-bottom: 1.5rem;
+}
+.contact__form-group,
+.footer__data-info,
+.footer__list-service,
+.footer__list-info,
+.footer__list-help,
+.footer__list-address {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+}
+.footer__data-info-item,
+.footer__list-service-item,
+.footer__list-info-item,
+.footer__list-help-item,
+.footer__list-address-item {
+      font-family: var(--second-font);
+      font-size: var(--body-font-size);
 }
 /* ============================== HEADER & NAVBAR =============================== */
 .header {
@@ -405,4 +460,34 @@ img {
       background: var(--white);
       width: 100%;
       height: 1px;
+}
+/* ====================== CONTACT ==================================== */
+.contact__form {
+      gap: 1.5rem;
+}
+.contact__form-group {
+      gap: .5rem;
+}
+.contact__form-label {
+      font-family: var(--first-font);
+      text-transform: capitalize;
+}
+.contact__form-input {
+      padding: 1em;
+      border: none;
+      outline: none;
+      background: rgba(218, 217, 217, 1);
+}
+.contact__form-btn {
+      width: 100%;
+}
+/* ================ footer ======================================== */
+footer {
+      margin-top: 6.25rem;
+}
+.footer {
+      background: var(--first-color);
+}
+.footer__list {
+      grid-template-columns: repeat(2, 1fr);
 }
