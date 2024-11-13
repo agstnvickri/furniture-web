@@ -110,7 +110,8 @@ img {
 .service__card-title,
 .service__card-lead,
 .banner__headline,
-.banner__lead {
+.banner__lead,
+.product__populer-card-label {
       color: var(--white);
 }
 .navbar__brand {
@@ -129,7 +130,8 @@ img {
 }
 .hero__container,
 .service__container,
-.banner__container {
+.banner__container,
+.product__container {
       gap: 6.25rem;
 }
 .hero__container,
@@ -142,7 +144,8 @@ img {
       text-align: center;
 }
 .hero__images,
-.banner__images {
+.banner__images,
+.product__populer-card-data {
       position: relative;
 }
 .hero__headline,
@@ -153,7 +156,8 @@ img {
 .hero__desc,
 .hero__btn,
 .service__card-lead,
-.banner__lead {
+.banner__lead,
+.product__populer-card-label {
       font-size: var(--h4-font-size);
 }
 .hero__btn,
@@ -165,10 +169,12 @@ img {
 .banner img {
       position: absolute;
 }
-.service__header {
+.service__header,
+.product__header {
       text-align: center;
 }
-.service__content {
+.service__content,
+.product__populer {
       gap: 3.25rem;
 }
 .service__content {
@@ -183,18 +189,41 @@ img {
       justify-content: space-between;
       align-items: center;
 }
-.service__card-title {
+.service__card-title,
+.product__populer-title {
       font-size: var(--h3-font-size);
       font-weight: var(--font-bold);
 }
 .service__card img {
       width: 120px;
 }
-.service__card-btn {
+.service__card-btn,
+.product__populer-card-btn,
+.product__populer-card-images {
       display: flex;
       gap: .5rem;
       align-items: center;
       justify-content: center;
+}
+.product__populer-list {
+      justify-content: center;
+      grid-template-columns: 220px;
+      gap: 3.25rem;
+}
+.product__populer-card-images {
+      padding: .5em;
+      margin-bottom: 1.5rem;
+      height: 120px;
+}
+.product__populer-card img {
+      width: 80px;
+}
+.product__populer-card-btn {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
 }
 /* ============================== HEADER & NAVBAR =============================== */
 .header {
@@ -302,4 +331,20 @@ img {
 .banner img {
       bottom: -20%;
       right: 0;
+}
+/* ==================================== PRODUCT ======================= */
+.product__populer-category {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+.product__populer-card-images {
+      border: 2px solid var(--first-color);
+}
+.product__populer-card-label {
+      padding: .5em 0;
+      width: 80px;
+      background: var(--first-color);
+      text-align: center;
+      text-transform: capitalize;
 }
